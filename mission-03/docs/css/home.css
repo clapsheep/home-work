@@ -1,0 +1,85 @@
+.header {
+  position: absolute;
+}
+main {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
+    url(/images/netflix-background.png), black 100% / cover no-repeat;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 28px;
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+.text-1 {
+  color: var(--White, #fff);
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03px;
+}
+.text-2 {
+  color: var(--White, #fff);
+  text-align: justify;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.01px;
+}
+.text-3 {
+  color: var(--White, #fff);
+  text-align: justify;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.008px;
+}
+.text-4 {
+  color: var(--White, #fff);
+  text-align: justify;
+
+  /* Text Shadow (Paragraph) */
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
+
+  /* Text/normal (bold) */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.008px;
+}
+
+.divider {
+  background: var(--gray-800, #2f2f2f);
+  height: 4px;
+}
+@media (max-width: 768px) {
+  .main-wrapper {
+    padding-top: 148px;
+    padding-bottom: 90px;
+  }
+  .text-1 {
+    font-size: 34px;
+  }
+  .text-2 {
+    font-size: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .text-3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .text-4 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

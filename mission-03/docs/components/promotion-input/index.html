@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>프로모션 인풋</title>
+  </head>
+  <body>
+    <form action="/" class="email-form">
+      <div class="email-form-wrapper">
+        <label class="email-form-input-label" for="user-email"
+          >이메일 주소</label
+        >
+        <input
+          class="email-form-input"
+          type="email"
+          id="user-email"
+          name="user-email"
+          required
+          placeholder="이메일 주소"
+        />
+        <span role="alert" id="email-error-feedback" class="form-message"
+          >정확한 이메일 주소를 입력하세요.</span
+        >
+        <div class="email-button-wrapper">
+          <button class="email-button" type="submit">
+            <div class="text">30일 무료 이용</div>
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+.header {
+  width: 100%;
+}
+.header-wrapper {
+  background: var(
+    --gradients-100,
+    linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%)
+  );
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 200px;
+}
+.title {
+  width: 140px;
+  height: 38px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.header-function {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 24px;
+}
+@media (max-width: 768px) {
+  .header-wrapper {
+    padding: 10px 25px;
+  }
+  .title {
+    width: 80px;
+    height: 22px;
+  }
+}
+/* 헤더용 랭귀지 버튼 */
+.header-select-box-wrapper {
+  position: relative;
+}
+
+.header-select-box {
+  color: var(--gray-500, #757575);
+  padding: 12px 10px;
+  width: 113px;
+  height: 40px;
+  text-align: center;
+  background: url("/images/bi_caret-down-fill.svg") no-repeat 95% 50%;
+  border-radius: 2px;
+  border: 1px solid var(--gray-500, #757575);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.header-select-global {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header-select-box {
+    height: 30px;
+    font-size: 16px;
+    padding: 5.5px 34px;
+  }
+  .header-select-global {
+    top: 7px;
+  }
+}

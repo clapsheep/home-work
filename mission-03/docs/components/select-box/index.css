@@ -1,0 +1,26 @@
+.select-box-wrapper {
+  position: relative;
+}
+
+.select-box {
+  color: var(--gray-500, #757575);
+  padding: 10.5px 34px;
+  width: 113px;
+  height: 40px;
+  text-align: center;
+  background: url("/images/bi_caret-down-fill.svg") no-repeat 95% 50%;
+  border-radius: 2px;
+  border: 1px solid var(--gray-500, #757575);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select-global {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+select::-ms-expand {
+  display: none;
+}

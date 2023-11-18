@@ -1,0 +1,23 @@
+.signin-button {
+  /* 버튼 텍스트 디자인 */
+  color: var(--White, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.008px;
+  /* 버튼 배경 디자인 */
+  display: inline-block;
+  border-radius: 4px;
+  background: var(--red-500, #e50914);
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+}
+@media (max-width: 768px) {
+  .signin-button {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+}
